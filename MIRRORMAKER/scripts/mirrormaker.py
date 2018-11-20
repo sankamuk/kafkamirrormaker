@@ -31,8 +31,7 @@ class Master(Script):
   
 
   def configure(self, env, isInstall=False):
-
-        
+       
     
   def stop(self, env):
  
@@ -41,15 +40,8 @@ class Master(Script):
   def start(self, env):
 
 
-  def check_mirrormaker_status(self, pid_file):
-
-
   def status(self, env):
-    import status_params       
-    from datetime import datetime
-    self.check_mirrormaker_status(status_params.flink_pid_file)
 
-  def set_conf_bin(self, env):
 
           
 if __name__ == "__main__":
