@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<metainfo>
+    <schemaVersion>2.0</schemaVersion>
+    <services>
+        <service>
+            <name>MIRRORMAKER</name>
+            <displayName>MirrorMaker</displayName>
+            <comment>Mirror Maker helps Replicate Kafka Topic across Kafka Cluster.</comment>
+            <version>0.9</version>
+            <components>
+                <component>
+                  <name>MIRRORMAKER_MASTER</name>
+                  <displayName>MIRRORMAKER</displayName>
+                  <category>MASTER</category>
+                  <cardinality>1</cardinality>
+                  <commandScript>
+                    <script>scripts/mirrormaker.py</script>
+                    <scriptType>PYTHON</scriptType>
+                    <timeout>10000</timeout>
+                  </commandScript>
+                </component>
+            </components>
+            <osSpecifics>
+              <osSpecific>
+                <osFamily>redhat7,redhat6</osFamily>
+                <packages>
+                   <package><name>kafka_2_4_*</name></package>  
+                </packages>
+              </osSpecific>
+              
+            </osSpecifics>
+      	    <configuration-dependencies>
+	        	<config-type>mirrormaker-ambari-config</config-type>      	   
+      	    </configuration-dependencies>
+            <restartRequiredAfterChange>true</restartRequiredAfterChange>
+        </service>
+    </services>
+</metainfo>

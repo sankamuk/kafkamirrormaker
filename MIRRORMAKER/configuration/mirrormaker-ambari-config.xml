@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+ 
+<configuration>
+  <property>
+    <name>kafka_config_dir</name>
+    <value>/etc/kafka/conf</value>
+    <description>Location to installed Kafka</description>
+  </property>
+
+  <property>
+    <name>mirrormaker_groupname</name>
+    <value>MirrorMaker</value>
+    <description>Mirror Maker Consumer Group</description>
+  </property> 
+
+</configuration>

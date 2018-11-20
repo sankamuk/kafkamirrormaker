@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>mirrormaker_log_dir</name>
+    <value>/var/log/mirrormaker</value>    
+    <description>Mirror Maker Log dir</description>
+  </property> 
+ <property>
+    <name>mirrormaker_home_dir</name>
+    <value>/var/run/mirrormaker</value>
+    <description>Dir containing process ID file</description>
+  </property>
+  <property>
+    <name>mirrormaker_user</name>
+    <value>kafka</value>
+    <property-type>USER</property-type>
+    <description>User Mirror Maker daemon runs as</description>
+  </property> 
+</configuration>
