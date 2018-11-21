@@ -3,18 +3,18 @@
     <schemaVersion>2.0</schemaVersion>
     <services>
         <service>
-            <name>MIRRORMAKER</name>
-            <displayName>MirrorMaker</displayName>
-            <comment>Mirror Maker helps Replicate Kafka Topic across Kafka Cluster.</comment>
+            <name>LONGRUN</name>
+            <displayName>LongRun</displayName>
+            <comment>Log Run helps Replicate Kafka Topic across Kafka Cluster.</comment>
             <version>0.9</version>
             <components>
                 <component>
-                  <name>MIRRORMAKER_MASTER</name>
-                  <displayName>MIRRORMAKER</displayName>
-                  <category>MASTER</category>
-                  <cardinality>1</cardinality>
+                  <name>LONGRUN_CLIENT</name>
+                  <displayName>LONGRUN</displayName>
+                  <category>SLAVE</category>
+                  <cardinality>1+</cardinality>
                   <commandScript>
-                    <script>scripts/mirrormaker.py</script>
+                    <script>scripts/longrun.py</script>
                     <scriptType>PYTHON</scriptType>
                     <timeout>10000</timeout>
                   </commandScript>
@@ -24,13 +24,13 @@
               <osSpecific>
                 <osFamily>redhat7,redhat6</osFamily>
                 <packages>
-                   <package><name>kafka_2_4_*</name></package>  
                 </packages>
               </osSpecific>
               
             </osSpecifics>
       	    <configuration-dependencies>
-	        	<config-type>mirrormaker-ambari-config</config-type>      	   
+	        	<config-type>longrun-ambari-config</config-type>      	   
+                        <config-type>longrun-env</config-type>
       	    </configuration-dependencies>
             <restartRequiredAfterChange>true</restartRequiredAfterChange>
         </service>
