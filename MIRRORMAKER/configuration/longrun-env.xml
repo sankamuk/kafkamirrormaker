@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>longrun_log_dir</name>
+    <value>/var/log/longrun</value>    
+    <description>Mirror Maker Log dir</description>
+  </property> 
+ <property>
+    <name>longrun_home_dir</name>
+    <value>/var/run/longrun</value>
+    <description>Dir containing process ID file</description>
+  </property>
+</configuration>

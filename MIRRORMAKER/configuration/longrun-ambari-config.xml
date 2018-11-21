@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+ 
+<configuration>
+  <property>
+    <name>longrun_groupname</name>
+    <value>MirrorMaker</value>
+    <description>Mirror Maker Consumer Group</description>
+  </property> 
+  <property>
+    <name>white_list</name>
+    <value>*</value>
+    <description>White List</description>
+  </property>
+  <property>
+    <name>ack_value</name>
+    <value>-1</value>
+    <description>Acknowledgement Value</description>
+  </property>
+  <property>
+    <name>broker_list</name>
+    <value>server:9181,client:9181</value>
+    <description>Broker List</description>
+  </property>
+
+</configuration>
