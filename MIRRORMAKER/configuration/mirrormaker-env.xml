@@ -11,10 +11,9 @@
     <value>/var/run/mirrormaker</value>
     <description>Dir containing process ID file</description>
   </property>
-  <property>
+ <property>
     <name>mirrormaker_user</name>
     <value>kafka</value>
-    <property-type>USER</property-type>
-    <description>User Mirror Maker daemon runs as</description>
-  </property> 
+    <description>User</description>
+  </property>
 </configuration>

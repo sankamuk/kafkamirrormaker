@@ -3,18 +3,18 @@
     <schemaVersion>2.0</schemaVersion>
     <services>
         <service>
-            <name>LONGRUN</name>
-            <displayName>LongRun</displayName>
+            <name>MIRRORMAKER</name>
+            <displayName>MIRRORMAKER</displayName>
             <comment>Log Run helps Replicate Kafka Topic across Kafka Cluster.</comment>
             <version>0.9</version>
             <components>
                 <component>
-                  <name>LONGRUN_CLIENT</name>
-                  <displayName>LONGRUN</displayName>
+                  <name>MIRRORMAKER_CLIENT</name>
+                  <displayName>MIRRORMAKER</displayName>
                   <category>SLAVE</category>
                   <cardinality>1+</cardinality>
                   <commandScript>
-                    <script>scripts/longrun.py</script>
+                    <script>scripts/mirrormaker.py</script>
                     <scriptType>PYTHON</scriptType>
                     <timeout>10000</timeout>
                   </commandScript>
@@ -29,8 +29,8 @@
               
             </osSpecifics>
       	    <configuration-dependencies>
-	        	<config-type>longrun-ambari-config</config-type>      	   
-                        <config-type>longrun-env</config-type>
+	        	<config-type>mirrormaker-ambari-config</config-type>      	   
+                        <config-type>mirrormaker-env</config-type>
       	    </configuration-dependencies>
             <restartRequiredAfterChange>true</restartRequiredAfterChange>
         </service>

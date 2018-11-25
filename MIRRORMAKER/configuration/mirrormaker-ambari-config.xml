@@ -3,15 +3,24 @@
  
 <configuration>
   <property>
-    <name>kafka_config_dir</name>
-    <value>/etc/kafka/conf</value>
-    <description>Location to installed Kafka</description>
-  </property>
-
-  <property>
     <name>mirrormaker_groupname</name>
     <value>MirrorMaker</value>
     <description>Mirror Maker Consumer Group</description>
   </property> 
+  <property>
+    <name>white_list</name>
+    <value>*</value>
+    <description>White List</description>
+  </property>
+  <property>
+    <name>source_broker</name>
+    <value>localhost:6667</value>
+    <description>Source Broker Config</description>
+  </property>
+  <property>
+    <name>destination_broker</name>
+    <value>localhost:6668</value>
+    <description>Destination Broker Config</description>
+  </property>
 
 </configuration>

@@ -4,8 +4,8 @@ import sys, os, glob
     
 config = Script.get_config()
 
-longrun_groupname = config['configurations']['longrun-ambari-config']['longrun_groupname']
-white_list = config['configurations']['longrun-ambari-config']['white_list']
-ack_value = config['configurations']['longrun-ambari-config']['ack_value']
-broker_list = config['configurations']['longrun-ambari-config']['broker_list']
+mirrormaker_groupname = config['configurations']['mirrormaker-ambari-config']['mirrormaker_groupname']
+white_list = config['configurations']['mirrormaker-ambari-config']['white_list']
+source_broker = config['configurations']['mirrormaker-ambari-config']['source_broker']
+destination_broker = config['configurations']['mirrormaker-ambari-config']['destination_broker']
 
