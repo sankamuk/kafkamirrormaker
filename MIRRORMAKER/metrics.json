@@ -1,0 +1,23 @@
+{
+  "MIRRORMAKER_CLIENT": {
+    "Component": [
+      {
+        "type": "ganglia",
+        "metrics": {
+          "default": {
+            "metrics/usedmem": {
+              "metric": "usedmem",
+              "pointInTime": true,
+              "temporal": true
+             },
+           "metrics/freemem": {
+             "metric": "freemem",
+             "pointInTime": true,
+             "temporal": true
+             }
+            }
+            }
+      }
+      ]
+      }
+      }

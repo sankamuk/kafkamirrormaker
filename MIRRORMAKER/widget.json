@@ -1,0 +1,32 @@
+{
+  "layouts": [
+    {
+      "layout_name": "default_mirrormaker_dashboard",
+      "display_name": "Standard MIRRORMAKER Dashboard",
+      "section_name": "MIRRORMAKER_SUMMARY",
+      "widgetLayoutInfo": [
+        {
+         "widget_name": "MIRRORMAKER info",
+         "description": "MIRRORMAKER info",
+         "widget_type": "GRAPH",
+         "is_visible": true,
+      "metrics": [
+         { 
+          "name": "freemem",
+          "metric_path": "metrics/freemem",
+          "service_name": "MIRRORMAKER",
+          "component_name": "MIRRORMAKER_CLIENT"
+         } 
+         ],
+      "values": [
+         {
+          "name": "freemem",
+          "value": "${freemem}"
+         }
+         ],
+      "properties": {
+        "graph_type": "LINE",
+        "time_range": "1"
+       }
+       }
+       }
